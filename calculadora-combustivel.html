@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Combustivel</title>
+    <script> 
+    
+    
+    // calculadora de combustível ativadade do Senac Formação superior 
+  
+alert ("Bem vindos a calculadora de combustíveis!!!")
+alert ("Vamos verificar qual combustível vale mais a pena na hora de abastecer ou se tanto faz qual vai ser a opção.")
+alert ("Para isso iremos precisar de duas informações:")
+var resposta
+do
+{ resposta == "2"
+var gasolina = parseFloat (prompt("Primeiro digite o valor da Gasolina: " ))
+var alcool = parseFloat (prompt ("Agora digite o valor do Etanol: " ))
+var barato = parseFloat(alcool / gasolina)
+if (barato.toFixed(2) <"0.70")
+{
+ alert ("O valor é: " +barato.toFixed (2)+" sendo assim vale a pena abastecer com ETANOL!")
+}if (barato.toFixed(2) >"0.70")
+{
+alert ('O valor é: ' +barato.toFixed (2)+" sendo assim vale a pena abastecer com GASOLINA!")
+}
+if (barato.toFixed(2) =="0.70")
+{
+ alert ('O valor é: ' +barato.toFixed (2)+" sendo assim vale a pena abastecer com qualquer COMBUSTÍVEL!")
+}
+ alert ("deseja fazer uma nova pesquisa?")
+ alert ("1 - SIM")
+ alert ('2 - NÃO')
+var resposta = (prompt ("DIGITE O NÚMERO DA SUA OPÇÃO:"))
+console.clear ()
+}
+while (resposta == "1")
+if(resposta >"2")
+{
+ alert("Opção inválida reinicie e tente novamente.")
+ }
+{
+ alert ("Obrigado até a próxima")
+}
+
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>
